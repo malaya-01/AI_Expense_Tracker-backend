@@ -1,26 +1,53 @@
+# 💰 Expense Tracker Backend
 
+This is a **FastAPI**-based backend service for an **Expense Tracker** application, leveraging **SQLAlchemy** for ORM and **PostgreSQL** for database management.
 
+---
 
-# Expense Tracker Backend
+## 🚀 Getting Started
 
-This is a [FastAPI](https://fastapi.tiangolo.com) backend for an Expense Tracker, built with [SQLAlchemy](https://www.sqlalchemy.org) and [PostgreSQL](https://www.postgresql.org).
+Follow the steps below to set up and run the backend server locally:
 
-## Getting Started
-
-First, activate the virtual environment and run the server:
+### 1. Create & Activate Virtual Environment
 
 ```bash
-# On Linux
+# On Linux/macOS
+python3 -m venv venv
 source venv/bin/activate  
-
-# On Windows: 
+```
+``` bash
+# On Windows
+python -m venv venv
 venv\Scripts\activate
-
-uvicorn main:app --reload
 ```
 
-Use [http://localhost:8000](http://localhost:8000) `curl` to see the API in action.
+### 2. Install Dependencies
 
-Or open [http://localhost:8000/api/v1](http://localhost:8000/api/v1)
+``` bash
+pip install -r requirements.txt
+```
 
-You can start editing the endpoints by modifying `main.py`. The server auto-reloads as you edit the file.
+### 3. Run the Development Server
+```bash
+uvicorn main:app --reload
+```
+## 📘 API Documentation
+🔹 Swagger UI
+Access the interactive API docs at:
+[http://localhost:8000/api/v1](http://localhost:8000/api/v1)
+
+🔹 Using cURL
+You can also interact with the API via command-line using curl at:
+[http://localhost:8000](http://localhost:8000)
+
+## 🛠️ Development
+To start customizing endpoints and business logic, edit the main.py file.
+The server supports hot reloading, so changes will reflect immediately during development.
+
+## 🧩 Tech Stack
+FastAPI – for building high-performance APIs
+
+SQLAlchemy – for database ORM
+
+PostgreSQL – as the primary database
+
